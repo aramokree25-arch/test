@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MedTech Imperial — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Assets/logo.jpg">
+</head>
+
+<body>
+  <!-- ===== Global Header / Banner (reuse on every page) ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="Assets/logo.jpg" alt="MedTech Imperial logo">
+        <span class="brand-text">
+          <strong>MedTech</strong> Imperial
+        </span>
+      </a>
+
+      <!-- Mobile menu toggle (no JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary">
+        <!-- Add 'aria-current="page"' on the active page link -->
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="team.html">Team</a>
+        <a href="events.html">Events</a>
+        <a href="partners.html">Partners</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero / Intro (Home only) ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Engineering healthcare innovation at Imperial</h1>
+        <p>
+          We connect students, clinicians and industry to build the future of medical technology —
+          through projects, talks, and hands-on events.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#about">Learn more</a>
+          <a class="btn btn-outline" href="events.html">Upcoming events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About (Home only) ===== -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Who we are</h2>
+        <p>
+          MedTech Imperial is a student-led society fostering interdisciplinary collaboration across
+          engineering, medicine and data science. We run talks with founders, skills workshops and
+          projects that turn ideas into prototypes.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Quick links</h3>
+        <ul class="link-list">
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="events.html">See Events</a></li>
+          <li><a href="partners.html">Partner with us</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Teasers (Home only) ===== -->
+  <section class="section subtle">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Talks & Panels</h3>
+        <p>Hear from clinicians, founders and investors shaping the MedTech landscape.</p>
+        <a class="text-link" href="events.html">See the calendar →</a>
+      </div>
+      <div class="card">
+        <h3>Projects</h3>
+        <p>Form interdisciplinary teams to prototype solutions to real healthcare problems.</p>
+        <a class="text-link" href="events.html#projects">How to join →</a>
+      </div>
+      <div class="card">
+        <h3>Partners</h3>
+        <p>We collaborate with industry and charities. Let’s create impact together.</p>
+        <a class="text-link" href="partners.html">Partner with us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Global Footer (reuse on every page) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="Assets/logo.jpg" alt="MedTech Imperial logo small">
+          <span><strong>MedTech</strong> Imperial</span>
+        </div>
+        <p class="footnote">© <span id="year"></span> MedTech Imperial Society · All rights reserved.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="events.html">Events</a>
+        <a href="partners.html">Partners</a>
+      </nav>
+
+      <div class="footer-meta">
+        <p><strong>Contact</strong></p>
+        <p><a href="mailto:contact@medtechimperial.org">contact@medtechimperial.org</a></p>
+        <div class="socials">
+          <!-- Replace with real links -->
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="LinkedIn">LI</a>
+          <a href="#" aria-label="Twitter / X">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tiny inline script just to set current year; safe to remove if not wanted -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
